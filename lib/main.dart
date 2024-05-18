@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  const app = MaterialApp(
-    title: "My App",
-    home: Text('Hello Flutter'),
-  );
+  var app = MaterialApp(
+      title: "My App",
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Hello Flutter Eiei'),
+        ),
+        body: const Text('This is body'),
+      ));
   runApp(app);
 }
-
