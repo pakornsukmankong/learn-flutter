@@ -9,9 +9,18 @@ void main() {
         backgroundColor: Colors.blue,
         centerTitle: true,
       ),
-      body: const Text('This is body'),
+      body: const Home(),
     ),
     theme: ThemeData(primarySwatch: Colors.green),
   );
   runApp(app);
+}
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Text("Hello Flutter content");
+  }
 }
